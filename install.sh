@@ -1,12 +1,13 @@
 #!/bin/bash
+current_directory=`pwd`
 if [ -f ~/.bashrc ];then
     mv ~/.bashrc ~/.bashrc.bak
 fi
-ln -s bashrc ~/.bashrc
+ln -s $current_directory/bashrc ~/.bashrc
 if [ -f ~/.gitconfig ];then
     mv ~/.gitconfig ~/.gitconfig.bak
 fi
-ln -s gitconfig ~/.gitconfig
+ln -s $current_directory/gitconfig ~/.gitconfig
 cd awesome
 ./install.sh
 cd ..
