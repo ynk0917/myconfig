@@ -1,14 +1,8 @@
 #!/bin/bash
 current_directory=`pwd`
-if [ -f ~/.bashrc ];then
-    rm ~/.bashrc.bak
-    mv ~/.bashrc ~/.bashrc.bak
-fi
+rm ~/.bashrc
 ln -s $current_directory/bashrc ~/.bashrc
-if [ -f ~/.gitconfig ];then
-    rm ~/.gitconfig.bak
-    mv ~/.gitconfig ~/.gitconfig.bak
-fi
+rm ~/.gitconfig
 ln -s $current_directory/gitconfig ~/.gitconfig
 if [ -d ~/.config/awesome ];then
     rm -rf ~/.config/awesome_bak
