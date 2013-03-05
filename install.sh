@@ -14,8 +14,9 @@ if [ -d ~/.config/awesome ];then
     mv ~/.config/awesome ~/.config/awesome_bak
 fi
 ln -s $current_directory/awesome ~/.config/awesome
+git pull origin master
 git submodule init
 git submodule update
-git submodule foreach git submodule update
+git submodule foreach git submodule init
 git submodule foreach git submodule update
 vim/install.sh
