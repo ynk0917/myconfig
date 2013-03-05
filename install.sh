@@ -13,5 +13,8 @@ cd ..
 if [ -d ~/.config/awesome ];then
     mv ~/.config/awesome ~/.config/awesome_bak
 fi
+git submodule init
+git submodule update
+git submodule foreach git submodule update
 git submodule foreach git submodule update
 vim/install.sh
