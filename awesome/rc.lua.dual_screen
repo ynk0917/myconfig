@@ -25,7 +25,7 @@ editor = os.getenv("EDITOR") or "editor"
 editor_cmd = terminal .. " -e " .. editor
 
 gvim="gvim"
-file_manager="pcmanfm"
+file_manager="nemo"
 p4v="/home/akun/libs/p4v/bin/p4v"
 eclipse="/home/akun/eclipse/eclipse"
 opera="opera"
@@ -552,6 +552,10 @@ awful.rules.rules = {
     { rule = { class = "Nautilus" },
       properties = { tag = tags[2][7], floating = false}},
     { rule = { class = "nautilus"},
+      properties = { tag = tags[2][7], floating = false}},
+    { rule = { class = "nemo" },
+      properties = { tag = tags[2][7], floating = false}},
+    { rule = { class = "Nemo"},
       properties = { tag = tags[2][7], floating = false}},
     { rule = { class = "pcmanfm"},
       properties = { tag = tags[2][7], floating = false}},
