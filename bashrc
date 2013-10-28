@@ -171,3 +171,4 @@ export TERM=xterm-256color
 if [ -e ~/.vim/bundle/android-completion/android ] ; then
     source ~/.vim/bundle/android-completion/android
 fi
+export GMOCK_HOME=~/libs/gmock-1.7.0
