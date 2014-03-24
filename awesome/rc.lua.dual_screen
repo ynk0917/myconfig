@@ -28,7 +28,7 @@ gvim="gvim"
 file_manager="nemo"
 p4v="/home/akun/libs/p4v/bin/p4v"
 eclipse="/home/akun/eclipse/eclipse"
-opera="opera"
+browser="firefox"
 office="openoffice.org"
 pcman="pcmanx"
 adb_screen_capture="/home/akun/mybin/adb_screen_capture.sh"
@@ -393,7 +393,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey },            "g",    function () awful.util.spawn(gvim) end),
     awful.key({ modkey },            "p",    function () awful.util.spawn(p4v) end),
     awful.key({ modkey },            "e",    function () awful.util.spawn(eclipse) end),
-    awful.key({ modkey },            "z",    function () awful.util.spawn(opera) end),
+    awful.key({ modkey },            "z",    function () awful.util.spawn(browser) end),
     awful.key({ modkey },            "c",    function () awful.util.spawn(office) end),
     awful.key({ modkey },            "v",    function () awful.util.spawn(pcman) end),
     awful.key({ modkey },            "d",    function () awful.util.spawn(file_manager) end),
