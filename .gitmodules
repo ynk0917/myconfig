@@ -1,3 +1,6 @@
 [submodule "vim"]
 	path = vim
 	url = git@github.com:ynk0917/vim.git
+[submodule "bash-completion/android-completion"]
+	path = bash-completion/android-completion
+	url = https://github.com/mbrubeck/android-completion.git
