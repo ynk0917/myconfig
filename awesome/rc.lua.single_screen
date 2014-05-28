@@ -29,7 +29,7 @@ file_manager="nautilus"
 p4v="/home/akun/libs/p4v/bin/p4v"
 eclipse="/home/akun/eclipse/eclipse"
 opera="opera"
-office="openoffice.org"
+office="libreoffice"
 pcman="pcmanx"
 adb_screen_capture="/home/akun/mybin/adb_screen_capture.sh"
 
@@ -492,6 +492,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][2], }},
     { rule = { class = "OpenOffice.org 3.2" },
       properties = { tag = tags[1][4], }},
+    { rule = { class = "libreoffice" },
+      properties = { tag = tags[1][3], }},
     { rule = { class = "Wireshark" },
       properties = { tag = tags[1][9], }},
     { rule = { class = "Sqlitebrowser" },
