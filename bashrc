@@ -99,7 +99,8 @@ if [ -f /etc/bash_completion ]; then
 fi
 xset b off
 export AWT_TOOLKIT=MToolkit
-export PATH=$PATH:~/mybin:~/mybin/ars:~/libs/p4v/bin:~/libs/android-sdk-linux/tools:~/libs/android-sdk-linux/platform-tools:~/mybin/psdtool-0.1-Linux/psdhtml
+export ANDROID_HOME=~/libs/adt-bundle-linux-x86_64-20131030/sdk
+export PATH=$PATH:~/mybin:~/mybin/ars:~/libs/p4v/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:~/mybin/psdtool-0.1-Linux/psdhtml
 alias ..='cd ..'
 alias ...='cd ../..'
 alias a='ant'
