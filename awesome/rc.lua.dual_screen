@@ -25,10 +25,12 @@ editor = os.getenv("EDITOR") or "editor"
 editor_cmd = terminal .. " -e " .. editor
 
 gvim="gvim"
+-- file_manager="nautilus"
 file_manager="nemo"
 p4v="/home/akun/libs/p4v/bin/p4v"
 eclipse="/home/akun/eclipse/eclipse"
-browser="firefox"
+intellij="/home/akun/idea-IC/bin/idea.sh"
+browser="x-www-browser"
 office="libreoffice"
 pcman="pcmanx"
 adb_screen_capture="/home/akun/mybin/adb_screen_capture.sh"
@@ -75,8 +77,8 @@ layouts = {
 tags = {
     settings = {
         {
-            names  = { "term", "vim", "office", "document", "analyzer", "eclipse", "git", "media", "misc"  },
-            layout = { layouts[2], layouts[1], layouts[4], layouts[6], layouts[4], layouts[5], layouts[4], layouts[6], layouts[1] },
+            names  = { "term", "vim", "office", "document", "analyzer", "intellij", "giggle", "media", "misc"  },
+            layout = { layouts[2], layouts[1], layouts[4], layouts[4], layouts[4], layouts[5], layouts[4], layouts[6], layouts[1] },
         },
         { 
             names  = { "misc", "document", "web", "gimp", "im", "pic", "fm", "perforce", 9  },
@@ -392,7 +394,7 @@ globalkeys = awful.util.table.join(
     -- shortkey
     awful.key({ modkey },            "g",    function () awful.util.spawn(gvim) end),
     awful.key({ modkey },            "p",    function () awful.util.spawn(p4v) end),
-    awful.key({ modkey },            "e",    function () awful.util.spawn(eclipse) end),
+    awful.key({ modkey },            "e",    function () awful.util.spawn(intellij) end),
     awful.key({ modkey },            "z",    function () awful.util.spawn(browser) end),
     awful.key({ modkey },            "c",    function () awful.util.spawn(office) end),
     awful.key({ modkey },            "v",    function () awful.util.spawn(pcman) end),
@@ -499,6 +501,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][5], }},
     { rule = { class = "Sqlitebrowser" },
       properties = { tag = tags[1][5], }},
+    { rule = { name = ".*IntelliJ IDEA.*" },
+      properties = { tag = tags[1][6], }},
     { rule = { class = "Eclipse" },
       properties = { tag = tags[1][6], }},
     { rule = { name = "Eclipse.*" },
