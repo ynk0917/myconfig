@@ -22,7 +22,7 @@
     sl = log  --color --pretty=format:'%C(yellow)%h %C(bold blue)%d%Creset - %Cred%ae %Cgreen%ar%Creset : %Creset%s'
     gsl = log  --color --graph --pretty=format:'%C(yellow)%h %C(bold blue)%d%Creset - %Cred%ae %Cgreen%ar%Creset : %Creset%s'
 	stash-unapply = !git stash show -p | git apply -R
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%C(magenta)[%ae]%Creset' --abbrev-commit --
+	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%C(magenta)[%ae]%Creset' --abbrev-commit --
 [giggle]
 	main-window-maximized = false
 	main-window-geometry = 1916x1057+0+19
