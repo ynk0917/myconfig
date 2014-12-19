@@ -4,6 +4,8 @@ rm ~/.bashrc
 ln -s $current_directory/bashrc ~/.bashrc
 rm ~/.gitconfig
 ln -s $current_directory/gitconfig ~/.gitconfig
+rm ~/.tmux.conf
+ln -s $current_directory/tmux.conf ~/.tumx.conf
 if [ -d ~/.config/awesome ];then
     rm -rf ~/.config/awesome_bak
     mv ~/.config/awesome ~/.config/awesome_bak
