@@ -173,3 +173,4 @@ if [ -e ~/myconfig/bash-completion/android-completion/android ] ; then
     source ~/myconfig/bash-completion/android-completion/android
 fi
 export GMOCK_HOME=~/libs/gmock-1.7.0
+. /home/nienkun/myconfig/powerline/bindings/bash/powerline.sh
