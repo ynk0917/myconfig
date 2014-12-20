@@ -16,6 +16,9 @@
 	st = status
     s = status -s -b
 	ci = commit
+    cam = commit --amend
+    ai = add -i
+    aip = add -ip
 	co = checkout
 	br = branch
 	last = log -1 HEAD
