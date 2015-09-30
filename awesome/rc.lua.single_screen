@@ -25,13 +25,15 @@ editor = os.getenv("EDITOR") or "editor"
 editor_cmd = terminal .. " -e " .. editor
 
 gvim="gvim"
-file_manager="nautilus"
-p4v="/home/akun/libs/p4v/bin/p4v"
-eclipse="/home/akun/eclipse/eclipse"
+file_manager="nemo"
+p4v="/home/nienkun/libs/p4v/bin/p4v"
+eclipse="/home/nienkun/eclipse/eclipse"
+intellij="/home/nienkun/idea-IC/bin/idea.sh"
+browser="x-www-browser"
 opera="opera"
 office="libreoffice"
 pcman="pcmanx"
-adb_screen_capture="/home/akun/mybin/adb_screen_capture.sh"
+adb_screen_capture="/home/nienkun/mybin/adb_screen_capture.sh"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -75,8 +77,8 @@ layouts = {
 tags = {
     settings = {
         {
-            names  = { "term", "vim", "www", "doc", "im", "eclipse", "fm", "p4", "misc"  },
-            layout = { layouts[2], layouts[1], layouts[4], layouts[1], layouts[4], layouts[5], layouts[6], layouts[4], layouts[1] },
+            names  = { "term", "vim", "www", "doc", "im", "intellij", "fm", "p4", "misc"  },
+            layout = { layouts[2], layouts[1], layouts[4], layouts[1], layouts[4], layouts[5], layouts[4], layouts[4], layouts[1] },
         },
 --        { 
 --            names  = { "misc", "document", "web", "gimp", "im", "pic", "fm", "perforce", 9  },
@@ -391,8 +393,8 @@ globalkeys = awful.util.table.join(
     -- shortkey
     awful.key({ modkey },            "g",    function () awful.util.spawn(gvim) end),
     awful.key({ modkey },            "p",    function () awful.util.spawn(p4v) end),
-    awful.key({ modkey },            "e",    function () awful.util.spawn(eclipse) end),
-    awful.key({ modkey },            "z",    function () awful.util.spawn(opera) end),
+    awful.key({ modkey },            "e",    function () awful.util.spawn(intellij) end),
+    awful.key({ modkey },            "z",    function () awful.util.spawn(browser) end),
     awful.key({ modkey },            "c",    function () awful.util.spawn(office) end),
     awful.key({ modkey },            "v",    function () awful.util.spawn(pcman) end),
     awful.key({ modkey },            "d",    function () awful.util.spawn(file_manager) end),
@@ -498,6 +500,10 @@ awful.rules.rules = {
       properties = { tag = tags[1][9], }},
     { rule = { class = "Sqlitebrowser" },
       properties = { tag = tags[1][5], }},
+    { rule = { name = ".*IntelliJ IDEA.*" },
+      properties = { tag = tags[1][6], }},
+    { rule = { name = ".*Android Studio.*" },
+      properties = { tag = tags[1][6], }},
     { rule = { class = "Eclipse" },
       properties = { tag = tags[1][6], }},
     { rule = { name = "Eclipse.*" },
@@ -544,6 +550,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][4], floating = false} },
     { rule = { class = "Skype" },
       properties = { tag = tags[1][5], }},
+    { rule = { class = "Telegram" },
+      properties = { tag = tags[1][5], }},
     { rule = { class = "Gpicview" },
       properties = { tag = tags[1][4], }},
     { rule = { class = "Eog" },
@@ -551,6 +559,10 @@ awful.rules.rules = {
     { rule = { class = "Nautilus" },
       properties = { tag = tags[1][7], floating = false}},
     { rule = { class = "nautilus"},
+      properties = { tag = tags[1][7], floating = false}},
+    { rule = { class = "nemo" },
+      properties = { tag = tags[1][7], floating = false}},
+    { rule = { class = "Nemo"},
       properties = { tag = tags[1][7], floating = false}},
     { rule = { instance = "p4v.bin" },
       properties = { tag =  tags[1][8]} },

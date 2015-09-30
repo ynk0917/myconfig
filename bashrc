@@ -99,7 +99,7 @@ if [ -f /etc/bash_completion ]; then
 fi
 xset b off
 export AWT_TOOLKIT=MToolkit
-export ANDROID_HOME=~/libs/adt-bundle-linux-x86_64-20131030/sdk
+export ANDROID_HOME=~/libs/android-sdk-linux
 export PATH=$PATH:~/mybin:~/mybin/ars:~/libs/p4v/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:~/mybin/psdtool-0.1-Linux/psdhtml
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -173,4 +173,4 @@ if [ -e ~/myconfig/bash-completion/android-completion/android ] ; then
     source ~/myconfig/bash-completion/android-completion/android
 fi
 export GMOCK_HOME=~/libs/gmock-1.7.0
-. /home/nienkun/myconfig/powerline/bindings/bash/powerline.sh
+#. /home/nienkun/myconfig/powerline/bindings/bash/powerline.sh
