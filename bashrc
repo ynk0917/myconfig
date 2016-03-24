@@ -103,6 +103,7 @@ export ANDROID_HOME=~/libs/android-sdk-linux
 export PATH=$PATH:~/mybin:~/mybin/ars:~/libs/p4v/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:~/mybin/psdtool-0.1-Linux/psdhtml
 alias ..='cd ..'
 alias ...='cd ../..'
+alias ....='cd ../../..'
 alias a='ant'
 alias c='cd -P'
 alias f='find'
@@ -118,6 +119,8 @@ alias grep="grep --color"
 alias bootloader="adb reboot-bootloader"
 alias pwd="pwd -P"
 alias logcat="adb logcat -v time"
+alias crash_logcat="adb logcat -v time| grep AndroidRuntime"
+alias launch_settings="adb shell am start -n com.android.settings/.Settings"
 alias top="htop"
 alias ever_host_ssh="ssh nienkun@10.5.37.225"
 alias preprocess_setting="java -jar ~/mybin/Preprocess.jar"
@@ -126,6 +129,7 @@ alias htc_ant="htc_ant_clean.sh && htc_ant.sh"
 alias xterm="xterm -tn xterm-256color -fa 'Monaco:pixelsize=18'"
 alias us="setxkbmap us"
 alias dv="setxkbmap dvorak"
+alias adb_restart="adb shell stop; adb shell start; adb shell sync"
 function goto_bin_directory() {
     pushd `which $1 | xargs dirname`
 }
@@ -174,3 +178,4 @@ if [ -e ~/myconfig/bash-completion/android-completion/android ] ; then
 fi
 export GMOCK_HOME=~/libs/gmock-1.7.0
 #. /home/nienkun/myconfig/powerline/bindings/bash/powerline.sh
+export USE_CCACHE=1
