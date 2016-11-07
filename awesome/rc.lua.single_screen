@@ -538,6 +538,8 @@ awful.rules.rules = {
     properties = { tag = tags[1][3], }},
     { rule = { class ="Firefox"},
     properties = { tag = tags[1][3], }},
+    { rule = { class ="TeamViewer"},
+    properties = { tag = tags[1][9], }},
     { rule = { class ="Aurora"},
     properties = { tag = tags[1][3], }},
     { rule = { class ="Nightly"},
