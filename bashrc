@@ -179,3 +179,4 @@ fi
 export GMOCK_HOME=~/libs/gmock-1.7.0
 #. /home/nienkun/myconfig/powerline/bindings/bash/powerline.sh
 export USE_CCACHE=1
+HISTFILESIZE=5000
