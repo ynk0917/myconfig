@@ -1,7 +1,9 @@
 #!/bin/bash
 current_directory=`pwd`
 rm ~/.bashrc
+rm ~/.zshrc
 ln -s $current_directory/bashrc ~/.bashrc
+ln -s $current_directory/zshrc ~/.zshrc
 rm ~/.gitconfig
 ln -s $current_directory/gitconfig ~/.gitconfig
 rm ~/.tmux.conf
