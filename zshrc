@@ -5,7 +5,7 @@ HISTSIZE=250000
 SAVEHIST=100000
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/nienkun/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
