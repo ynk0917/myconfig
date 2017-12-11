@@ -1,8 +1,5 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-HISTFILE=~/.histfile
-HISTSIZE=250000
-SAVEHIST=100000
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -66,7 +63,6 @@ HIST_STAMPS="mm/dd/yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 setopt autocd
 # cd command pushes directories to the pushd/popd stack
-setopt auto_pushd
 setopt dvorak
 
 plugins=(
@@ -96,7 +92,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-prompt_context() {}
 
 # User configuration
 
@@ -118,6 +113,9 @@ fi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+HISTFILE=~/.histfile
+HISTSIZE=250000
+SAVEHIST=100000
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
