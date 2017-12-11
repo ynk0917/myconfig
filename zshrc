@@ -141,3 +141,4 @@ alias du='du -c -h'
 alias mkdir='mkdir -p -v'
 alias SimpleServer='open http://localhost:8000; python -m SimpleHTTPServer'
 skip_global_compinit=1
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
