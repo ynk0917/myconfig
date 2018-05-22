@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export PATH=$PATH:$HOME/mybin:$HOME/Library/Android/sdk/platform-tools:$HOME/mybin/arcanist/bin
+
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
@@ -140,5 +142,8 @@ alias df='df -h'
 alias du='du -c -h'
 alias mkdir='mkdir -p -v'
 alias SimpleServer='open http://localhost:8000; python -m SimpleHTTPServer'
+alias logcat="adb logcat -v threadtime"
+alias crash_logcat='adb logcat -v threadtime | grep -i "AndroidRuntime\|System.err\|Exception"'
+alias top="htop"
 skip_global_compinit=1
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
