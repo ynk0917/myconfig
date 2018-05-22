@@ -2,8 +2,10 @@
 current_directory=`pwd`
 rm ~/.bashrc
 rm ~/.zshrc
+rm ~/.srceenrc
 ln -s $current_directory/bashrc ~/.bashrc
 ln -s $current_directory/zshrc ~/.zshrc
+ln -s $current_directory/screenrc ~/.screenrc
 rm ~/.gitconfig
 ln -s $current_directory/gitconfig ~/.gitconfig
 rm ~/.tmux.conf

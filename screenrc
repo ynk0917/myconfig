@@ -1,0 +1,4 @@
+#logfile '/Users/nienkunyeh/screenlogs/screenlog-%n-%Y%m%d-%c:%s'
+logfile "$HOME/screenlogs/screenlog-%n-%Y%m%d-%c:%s"
+defscrollback 10000
+deflog on
