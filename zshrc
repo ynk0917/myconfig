@@ -149,4 +149,7 @@ skip_global_compinit=1
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
+  export WORKON_HOME=$HOME/.virtualenvs
+  export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+  pyenv virtualenvwrapper_lazy
 fi
