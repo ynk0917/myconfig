@@ -150,3 +150,6 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+export WORKON_HOME=$HOME/.virtualenvs
+export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+pyenv virtualenvwrapper_lazy
