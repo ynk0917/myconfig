@@ -147,3 +147,6 @@ alias crash_logcat='adb logcat -v threadtime | grep -i "AndroidRuntime\|System.e
 alias top="htop"
 skip_global_compinit=1
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
