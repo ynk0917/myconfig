@@ -89,7 +89,7 @@ plugins=(
   history
   history-substring-search
   man
-  osx
+  macos
   web-search
 )
 
