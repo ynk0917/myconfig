@@ -72,7 +72,7 @@ plugins=(
   brew
   colored-man-pages
   colorize
-  copydir
+  copypath
   copyfile
   cp
   git
