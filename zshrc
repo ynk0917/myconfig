@@ -153,3 +153,5 @@ eval "$(pyenv init -)"
 export WORKON_HOME=$HOME/.virtualenvs
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 pyenv virtualenvwrapper_lazy
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
