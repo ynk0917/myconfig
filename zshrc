@@ -143,7 +143,7 @@ alias du='du -c -h'
 alias mkdir='mkdir -p -v'
 alias SimpleServer='open http://localhost:8000; python -m SimpleHTTPServer'
 alias logcat="while true;do adb logcat -v threadtime; done"
-alias crash_logcat='adb logcat -v threadtime | grep -i "AndroidRuntime\|System.err\|Exception"'
+alias crash_logcat='logcat | grep -i "AndroidRuntime\|System.err\|Exception\|Debug\|ANR"'
 alias top="htop"
 skip_global_compinit=1
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
